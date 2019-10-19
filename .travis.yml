@@ -4,4 +4,14 @@ xcode_workspace: sampleProject.xcworkspace
 xcode_scheme: sampleProject
 xcode_destination: platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro
 before_install:
-    - pod install
+  - pod install
+after_success:
+  - gem install jazzy
+  - make documentation
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  local-dir: docs
+  on:
+    branch: master
