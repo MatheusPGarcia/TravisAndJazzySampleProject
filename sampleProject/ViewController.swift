@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    /**
+     *
+     * Method created to test how to doccument
+     *
+     * - Parameter testingParamether: The paramether used to test
+     * - Returns: The String returned
+     *
+     */
+    func testing(testingParamether: String) -> String {
 
+        return ""
+    }
 }
-
