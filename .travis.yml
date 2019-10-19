@@ -1,0 +1,7 @@
+language: swift
+osx_image: xcode11.1
+xcode_workspace: sampleProject.xcworkspace
+xcode_scheme: sampleProject
+xcode_destination: platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro
+before_install:
+    - pod install
